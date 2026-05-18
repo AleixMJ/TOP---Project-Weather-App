@@ -1,4 +1,5 @@
 import "./styles.css";
+import weatherDisplay from "./weatherDisplay.js";
 
 
 const form = document.getElementById("weatherForm");
@@ -18,6 +19,7 @@ async function checkWeather(event) {
         
     let cityWeather = await response.json();
     console.log(cityWeather);
+    weatherDisplay(cityWeather);
     } catch (error) {
         console.error('Error fetching weather data:', error.message);
         alert('Error fetching weather data: ' + error.message);

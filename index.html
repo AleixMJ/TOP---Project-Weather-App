@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weater App</title>
+<script defer src="main.js"></script></head>
+<body>
+    
+    <div class="container">
+            <h1>Aleix weather App</h1>
+            <form id="weatherForm" action="">
+            <label for="city">City Name:</label>
+            <input type="text" id="city" placeholder="Enter city name">
+            <button id="submitBtn" type="submit">Get Weather</button>
+        </form>
+
+        <div id="weatherResult" hidden>
+            <h2 id="cityName"></h2>
+            <img id="icon">
+            <p id="temperature"></p>
+            <p id="description"></p>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

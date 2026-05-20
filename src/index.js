@@ -2,8 +2,11 @@ import "./styles.css";
 import weatherDisplay from "./weatherDisplay.js";
 
 
+
 const form = document.getElementById("weatherForm");
 form.addEventListener('submit', checkWeather);
+
+
 
 async function checkWeather(event) {
     event.preventDefault();

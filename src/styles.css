@@ -19,6 +19,9 @@ body {
 /* ==========================================
    2. APP CONTAINER (THE WEATHER CARD)
    ========================================== */
+/* ==========================================
+   2. APP CONTAINER (THE WEATHER CARD)
+   ========================================== */
 .container {
     background: white;
     padding: 2.5rem 2rem;
@@ -27,6 +30,17 @@ body {
     width: 350px;
     display: flex;
     flex-direction: column;
+}
+
+/* New clean styling for your app title */
+.container h1 {
+    font-size: 1.8rem;
+    font-weight: 800;          /* Punchy, extra bold font weight */
+    color: #1e293b;            /* Sleek dark charcoal instead of harsh black */
+    text-align: center;
+    margin-bottom: 1.5rem;     /* Adds breathing room above "City Name:" */
+    letter-spacing: -0.5px;    /* Tighter, premium UI look */
+    text-transform: capitalize;/* Ensures proper casing automatically */
 }
 
 /* ==========================================
@@ -114,6 +128,8 @@ button:hover {
 
 #icon {
     width: 40%;
+    display: block;      /* Blocks out its own line space */
+    margin: 0 auto;      /* Perfectly auto-centers horizontally */
 }
 /* ==========================================
    5. ANIMATIONS
